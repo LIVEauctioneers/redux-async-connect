@@ -93,7 +93,7 @@ class ReduxAsyncConnect extends React.Component {
   };
 
   isLoaded() {
-    return this.context.store.getState().reduxAsyncConnect.loaded;
+    return this.context.store.getState().getIn(['reduxAsyncConnect', 'loaded']);
   }
 
   constructor(props, context) {
